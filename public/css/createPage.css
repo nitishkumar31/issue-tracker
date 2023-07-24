@@ -1,0 +1,34 @@
+.container #createProjectForm{
+    display:flex;
+    flex-direction:column;
+}
+
+.container #createProjectForm input[type="text"]{
+    padding:1rem 2.5rem;
+    width:350px;
+    font-size:1.5rem;
+    transition: all .2s ease-in-out;
+}
+.container #createProjectForm input[type="text"]:focus{
+    border-radius:2rem;
+}
+.container #createProjectForm input[type="submit"]{
+    padding:1rem 2.5rem;
+    font-size:1.5rem;
+    margin-top:1rem;
+    background-color: #39ff14;
+    transition: all .2s ease-in-out;
+    cursor:pointer;
+}
+.container #createProjectForm input[type="submit"]:hover{
+    border-radius:2rem;
+}
+.container #createProjectForm textarea{
+    margin:1rem 0;
+    padding:1rem 2.5rem;
+    font-size:1.5rem;
+    transition: all .2s ease-in-out;
+}
+.container #createProjectForm textarea:focus{
+    border-radius:2rem;
+}

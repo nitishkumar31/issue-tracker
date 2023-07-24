@@ -1,0 +1,27 @@
+*{
+    margin:0;
+}
+body{
+    margin:0;
+}
+.navigationBar{
+    height:10vh;background-color: #0a1019;display:flex;justify-content: space-between;align-items: center;margin:0;
+}
+.leftNav{
+    margin-left:2rem;
+}
+.leftNav .logo{
+    color: #39ff14;
+    /* color: orange; */
+}
+.rightNav{
+    margin-right:2rem;
+}
+.rightNav a{
+    color:#0a1019;background-color: #39ff14;font-size:1.5rem;
+    padding:.4rem 1rem;text-decoration:none;font-family:'Poppins',sans-serif;
+    transition: all .2s ease-in-out;
+}
+.rightNav a:hover{
+    border-radius:1.5rem;
+}

@@ -1,0 +1,68 @@
+.margin{
+    margin:1rem 0;
+}
+
+.container #labelDropdown{
+    font-size:2rem;
+}
+.container select{
+    width:50%;
+    transition:all .2s ease-in-out;
+}
+.container select:focus{
+    border-radius:1rem;
+}
+.labelContainer{
+    display:flex;
+    justify-content: space-between;
+}
+.container select option{
+    font-size:1.5rem;
+    padding:.5rem 0;
+}
+.container select option:hover{
+    background-color: black;
+    color:#39ff14;
+}
+#label{
+    padding:.5rem;
+    font-size:1.2rem;
+}
+
+#label .option{
+    padding:.5rem;
+    background-color: #39ff14;
+    
+}
+/* #label .option:hover{
+    
+} */
+.createIssueContainer .projectName{
+    font-size:1.3rem;
+}
+.createIssueContainer .projectName .name{
+    font-size:1.5rem;
+    color:darkviolet;
+    font-weight:bold;
+}
+.createIssueAndAuthor{
+    display:flex;
+    justify-content: space-between;
+    position: relative;
+}
+.pdCreateIssueLink{
+    margin-right:2rem;
+    
+}
+.tooltipCIProjectDetails{
+    width: 120px;
+    /* left: 30px; */
+    right:-15px;
+    top: -50px;
+    background: #39ff14;
+}
+.pdCreateIssueLink:hover+.tooltip {
+    display: block;
+}
+
+

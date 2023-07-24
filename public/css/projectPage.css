@@ -1,0 +1,296 @@
+.projectPage {
+    text-align: left;
+    width: 80%;
+    border: 2px solid black;
+    border-radius: 2rem;
+    margin-top: 2rem;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.detailsContainer {
+    width: 80%;
+    height:65vh;
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding:2rem;
+}
+
+.projectDetailSection {
+    width: 50%;
+    height:100%;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.projectDetailSection .projectName {
+    font-size: 2.2rem;
+    font-weight: 500;
+    color: darkviolet;
+    font-weight: bold;
+}
+
+.projectDetailSection .projectDesc {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 1rem 0;
+}
+
+.projectDetailSection .projectAuthor {
+    font-size: 1.4rem;
+    font-weight: 500;
+    display: inline-block;
+}
+
+.projectDetailSection .projectAuthor .name {
+    color: darkviolet;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.projectDetailSection .pdCreateIssueLink{
+    background-color: #39ff14;
+    text-decoration:none;
+    font-size:1.5rem;
+    padding:.5rem 7rem;
+    border:2px solid black;
+    transition: all .2s ease-in-out;
+    color:black;
+}
+.projectDetailSection .pdCreateIssueLink:hover{
+    
+    border-radius:2rem;
+}
+
+.detailsContainer .functionality {
+    width: 45%;
+    padding: 1rem;
+    height:95%;
+}
+
+.functionality .filterSection {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom:1rem;
+}
+
+.head {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.functionality .searchSection {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+input[type="checkbox"] {
+    height: 20px;
+    width: 20px;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #fff;
+    margin: 0;
+    margin-left:1rem;
+    border: 2px solid black;
+    border-radius: 5px;
+    display: grid;
+    place-content: center;
+}
+.labelCheckbox{
+    font-size:1.1rem;
+    margin-left:.2rem;
+}
+.filterButton, .searchButton{
+    padding:.4rem 1rem;
+    font-size:1.3rem;
+    margin-left:1rem;
+    background-color: #39ff14;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+.filterButton:hover, .searchButton:hover{
+    border-radius:1.5rem;
+}
+.searchBar{
+    padding:.4rem 1rem;
+    font-size:1.3rem;
+    margin-left:1rem;
+    transition: all .2s ease-in-out;
+}
+.searchBar:focus{
+    border-radius:1.5rem;
+}
+input[type="checkbox"]::before {
+    content: "";
+    width: 18px;
+    height: 18px;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    border-radius:3px;
+    box-shadow: inset 1em 1em #39ff14;
+}
+
+input[type="checkbox"]:checked::before {
+    transform: scale(1);
+}
+
+.bugSection{
+    padding:.5rem;
+    height:450px;
+    overflow-y: auto;
+}
+.bugSection::-webkit-scrollbar{
+    width:10px;
+}
+.bugSection::-webkit-scrollbar-thumb{
+    background-color: #39ff14;
+}
+.bug{
+    border:2px solid black;
+    padding:.5rem;
+    margin:.5rem 0;
+}
+.bugSection .title{
+    font-size:1.2rem;
+    font-weight:bold;
+    color:blueviolet;
+}
+.bugSection .title .name{
+    font-size:1.4rem;
+    font-weight:bold;
+}
+.bugSection .description{
+    font-size:1.05rem;
+    margin:.5rem 0;
+    font-weight:bold;
+}
+.bugSection .label{
+    font-size:1.2rem;
+    font-weight:bold;
+}
+.bugSection .author{
+    font-size:1.2rem;
+    margin:.5rem 0;
+    font-weight:bold;
+}
+.noIssueFound{
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width:1792px) {
+    .detailsContainer {
+        width: 95%;
+        height:65vh;
+    }
+}
+@media screen and (max-width:1530px) {
+    .detailsContainer {
+        width: 95%;
+        height:65vh;
+    }
+    .projectDetailSection {
+        width: 35%;
+    }
+    .detailsContainer .functionality {
+        width: 60%;
+    }
+    .projectDetailSection .pdCreateIssueLink{
+        font-size:1.3rem;
+        padding:.4rem 3rem;
+    }
+    .projectDetailSection .projectName {
+        font-size: 2rem;
+    }
+    .projectDetailSection .projectDesc {
+        font-size: 1.05rem;
+        margin: .7rem 0;
+    }
+    .projectDetailSection .projectAuthor .name {
+        font-size: 1.2rem;
+    }
+}
+@media screen and (max-width:1132px) {
+    .functionality .filterSection {
+        margin-bottom:.8rem;
+    }
+    
+    .head {
+        font-size: 1.2rem;
+    }
+    
+    input[type="checkbox"] {
+        height: 15px;
+        width: 15px;
+        margin-left:.8rem;
+        border-radius: 3px;
+    }
+    .labelCheckbox{
+        font-size:1.1rem;
+        margin-left:.2rem;
+    }
+    .filterButton, .searchButton{
+        padding:.3rem .85rem;
+        font-size:1.2rem;
+    }
+    .filterButton:hover, .searchButton:hover{
+        border-radius:1.3rem;
+    }
+    .searchBar{
+        padding:.35rem .8rem;
+        font-size:1.2rem;
+    }
+    .searchBar:focus{
+        border-radius:1.5rem;
+    }
+    input[type="checkbox"]::before {
+        width: 12px;
+        height: 12px;
+    }
+    .bugSection{
+        height:450px;
+    }
+    .bugSection::-webkit-scrollbar{
+        width:8px;
+    }
+    .bugSection .title{
+        font-size:1.05rem;
+    }
+    .bugSection .title .name{
+        font-size:1.2rem;
+    }
+    .bugSection .description{
+        font-size:1rem;
+    }
+    .bugSection .label{
+        font-size:1.05rem;
+    }
+    .bugSection .author{
+        font-size:1.05rem;
+    }
+    .detailsContainer {
+        width: 95%;
+        /* height:65vh; */
+        height:auto;
+    }
+}
+@media screen and (max-width:1050px) {
+    
+    .detailsContainer {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding:2rem;
+        flex-direction:column;
+    }
+    .detailsContainer .functionality {
+        width: 100%;
+    }
+    .projectDetailSection{
+        width:100%;
+    }
+}
