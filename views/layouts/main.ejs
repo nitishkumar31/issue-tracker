@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%- title %></title>
+
+    <!-- Tab Icon -->
+    <link rel="icon" href="/images/house-crack-solid.svg" type="image/icon type">
+    
+    <!-- Importing font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+    <!-- Imoporting google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+   
+    <!-- Importing all the css files -->
+    <link rel="stylesheet" type="text/css" href="/css/main.css" />
+    <link rel="stylesheet" type="text/css" href="/css/home.css" />
+    <link rel="stylesheet" type="text/css" href="/css/createPage.css" />
+    <link rel="stylesheet" type="text/css" href="/css/header.css" />
+    <link rel="stylesheet" type="text/css" href="/css/projectPage.css" />
+    <link rel="stylesheet" type="text/css" href="/css/createIssue.css" />
+</head>
+<body>
+    <!-- Including the partial for header -->
+    <%- include('../partials/header.ejs') %>
+    
+    <!-- Importing all the ejs files in body depending upon the route -->
+    <%- body %>
+</body>
+</html>

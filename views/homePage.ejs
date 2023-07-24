@@ -1,0 +1,41 @@
+<!-- Home Page Container -->
+<div class="container">
+  <div class="mainHeading">
+    <p class="heading">Projects</p>
+    <a class="addProject" href="create_project"
+      ><i class="fa-solid fa-plus"></i
+    ></a>
+    <div class="tooltip addProjectTooltip"><p>Create Project</p></div>
+  </div>
+  <div class="projectContainer">
+    <!-- Rendering all the projects using forEach loop -->
+    <% allProjects.forEach((project)=>{ %>
+
+      <div class="box">
+        <p class="projectName"><%- project.projectName %></p>
+        <p class="projectDesc">
+          <%- project.description %>
+        </p>
+        <div class="boxFooter">
+          <p class="projectAuthor">Author:<span class="name"> <%- project.authorName %></span></p>
+          <div class="detailIssueLinks">
+            <p class="issueCount"> Issues Tracked: <span class="count"><%- project.issues.length %></span></p>
+
+            <!-- Tooltips when user hover over the icon present in links -->
+            <a class="projectDetails" style="margin-right: 2rem" href="project_details/<%- project.id %>"
+              ><i class="fa-solid fa-circle-info  boxLink"></i
+            ></a>
+            <div class="tooltip tooltipProjectDetails">
+              <p>Project Details</p>
+            </div>
+            <a class="createIssue" style="margin-right: 2rem" href="create_issue/<%- project.id %>"
+              ><i class="fa-solid fa-circle-plus boxLink"></i
+            ></a>
+            <div class="tooltip tooltipCreateIssue"><p>Create Issue</p></div>
+          </div>
+        </div>
+      </div>
+    <% }) %> 
+    
+  </div>
+</div>
