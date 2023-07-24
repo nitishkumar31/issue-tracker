@@ -1,4 +1,4 @@
-# issue-tracker
+# Issue Tracker
 Created an Issue Tracker Web Application using HTML, CSS, JavaScript, Node js, Express js & MongoDB.
 
 ## Users can do multiple tasks over here...
